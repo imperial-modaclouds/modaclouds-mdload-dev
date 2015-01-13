@@ -12,6 +12,7 @@ public class EndSession extends Request
 
 	@Override
 	public long action( WebDriver driver ) {
+		driver.manage().deleteAllCookies();
 		return 0;
 	}
 }
